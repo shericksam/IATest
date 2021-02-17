@@ -1,0 +1,38 @@
+//
+//  Localizable.strings
+//  IATest
+//    SPANISH
+//  Created by Erick Guerrero on 16/02/21.
+//
+
+//Global
+"loading..." = "Cargando...";
+"error" = "Error";
+"success" = "Éxito";
+"warning" = "Advertencia";
+"confirm" = "Confirma";
+"yes" = "Sí";
+
+"welcome" = "¡Bienvenido!";
+
+//Auth
+"signin" = "Iniciar sesión";
+"username" = "Nombre de usuario";
+"password" = "Contraseña";
+
+//Home
+"profile" = "Perfil";
+"billboard" = "Cartelera";
+"complex" = "Complejo";
+
+//profile
+"username:" = "Nombre de usuario:";
+"email:" = "Correo electrónico:";
+"card:" = "Tarjeta:";
+"confirm-close-session" = "¿Deseas cerrar sesión?";
+
+"logout" = "Cerrar sesión";
+
+"transactions" = "Transacciones";
+"check-card" = "Consultar tarjeta";
+"card-number" = "Número de tarjeta";

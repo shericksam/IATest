@@ -1,0 +1,194 @@
+/* 
+  Localizable.strings
+  IATest
+    ARABIC
+  Created by Erick Guerrero on 16/02/21.
+*/
+
+//Global
+"Error" = "خطأ";
+"Correcto" = "ناجح";
+"Advertencia" = "تحذير";
+"Atrás" = "عودة";
+"Grupo" = "مجموعة";
+"Agregar" = "أضف";
+"Guardar" = "حفظ";
+"Sí" = "نعم";
+"Documentos" = "مستندات";
+"Llave" = "مفتاح";
+"Ninguno" = "لا يوجد";
+"Ninguna" = "لا يوجد";
+"Respuesta" = "إجابة";
+"sin titulo" = "بلا عنوان";
+"Iniciar" = "بداية";
+"Revisión" = "مراجعة";
+"Buscar" = "بحث";
+
+"¿Deseas sincronizar?" = "هل تريد المزامنة؟";
+"Sincronizar" = "مزامنة";
+//Auth
+"Usuario" = "المستعمل";
+"Contraseña" = "كلمه السر";
+"Iniciar sesión" = "تسجيل الدخول";
+
+//Sync
+"Sincronizando..." = "تزامن ...";
+
+//Chats
+"Chats" = "الدردشات";
+"¿Qué acción quieres hacer?" = "ما العمل الذي تريد القيام به؟";
+"Unirme a un grupo" = "انضمام مجموعة";
+"Configuraciones" = "التكوينات";
+"Cancelar" = "إلغاء";
+"Lista de difusión" = "قائمة البث";
+"Grupo nuevo" = "مجموعة جديدة";
+
+//RoomItem
+"Tarea" = "مهمة";
+"Incidencia" = "سقوط";
+"Demora" = "تأخير";
+"Imagen" = "صورة";
+"Video" = "فيديو";
+"Documento" = "المستند";
+
+//ChatView
+"Cámara" = "الة تصوير";
+"Librería de foto y vídeo" = "مكتبة الصور والفيديو ؛";
+"Librería de foto" = "مكتبة الصور";
+"Mensaje..." = "رسالة...";
+"Tiempo restante" = "الوقت المتبقي";
+"Enviando..." = "إرسال...";
+
+//New group
+"Agregar participantes" = "أضف مشاركين";
+"Siguiente" = "التالى";
+"Nombre del grupo" = "أسم المجموعة";
+"Participantes" = "المشاركين";
+"Nuevo grupo" = "مجموعة جديدة";
+"Crear" = "خلق";
+
+//Group join
+"No hay descripción" = "بدون وصف";
+"Grupos de la organización" = "مجموعات المنظمة";
+"Solicitar unirme" = "تقديم طلب للانضمام";
+"Ya se envio una solicitud" = "تم إرسال تطبيق بالفعل";
+
+// Broadcast list
+"Nombre de la lista" = "اسم القائمة";
+"Nueva lista de difusión" = "قائمة البث الجديدة";
+
+"Nombre de grupo" = "أسم المجموعة";
+"Lista de destinatarios" = "قائمة المستلمين";
+"Editar lista" = "تحرير القائمة";
+"Información de lista" = "قائمة المعلومات";
+
+//Configurations
+"Cerrar sesión" = "تسجيل خروج";
+"¿Deseas cerrar sesión?" = "هل ترغب بالخروج؟";
+
+//Notifications
+"Notificaciones" = "إشعارات";
+
+//Incidents
+"Nueva incidencia" = "وقوع جديد";
+"Notas" = "ملاحظات";
+"Baja" = "منخفض";
+"Media" = "نصف";
+"Alta" = "عالي";
+"Prioridad" = "أفضلية";
+"Incidencia previa" = "الوقوع السابق";
+"Tipo de incidencia" = "نوع الحادث";
+"Incidencias" = "الحوادث";
+"Terminada" = "تم الانتهاء من";
+"No se pudo realizar" = "لا يمكن القيام به";
+"Comentarios" = "تعليقات";
+"Agregar comentarios" = "أضف تعليقات";
+"Campo llave" = "مجال المفتاح";
+"Categoría" = "الفئة";
+"Reporte" = "نقل";
+"Sin comentarios" = "لا لجنة";
+"Evidencia" = "دليل";
+"Resolver" = "حل";
+"Detalle de incidencia" = "تفاصيل الحادث";
+"Pendiente de resolver" = "في انتظار الحل";
+"Resuelta" = "تم الحل";
+"No se pudo resolver" = "فشل في الحل";
+"Seleccionar múltiples" = "حدد متعددة";
+
+//Delay
+"Demoras" = "التأخير";
+"Nueva demora" = "تأخير جديد";
+"Etapa afectada" = "المرحلة المتأثرة";
+"Tipo de demora" = "نوع التأخير";
+
+//Image
+"Agregar imagen" = "إضافة صورة";
+
+//Task
+"Nombre" = "اسم";
+"Ubicación" = "موقعك";
+"Detalles" = "تفاصيل";
+"Fecha y hora" = "التاريخ و الوقت";
+"Asignar" = "تعيين";
+"Cualquiera" = "أي واحد";
+"Nueva tarea" = "مهمة جديدة";
+"Mis Tareas" = "مهامي";
+"Mis tareas" = "مهامي";
+"Tareas grupo" = "مهام المجموعة";
+"Tareas de grupo" = "مهام المجموعة";
+"Asignado a" = "مخصص ل";
+"(yo)" = "(أنا";
+"Vence el" = "تنتهي صلاحيته في";
+"Detalle de tarea" = "تفاصيل المهمة";
+"Tareas" = "مهام";
+"Finalizar" = "وضع اللمسات الأخيرة";
+
+//Process
+"Registrar" = "تسجيل";
+"proceso" = "معالجة";
+"Ingrese respuesta" = "أدخل الإجابة";
+"Página" = "الصفحة";
+"Enviar" = "إرسال";
+"No hay preguntas" = "لا توجد أسئلة";
+"No tienes permisos para contestar" = "ليس لديك إذن للإجابة";
+"No puedes contestar esta pregunta" = "لا يمكنك الإجابة على هذا السؤال";
+
+"Etapas" = "مراحل";
+"Deben finalizar las etapas anteriores" = "يجب أن تنتهي المراحل السابقة";
+"Pendiente" = "قيد الانتظار";
+"En proceso" = "تحت المعالجة";
+"Finalizada" = "تم الانتهاء من";
+
+"Formatos" = "التنسيقات";
+"No puedes ver formatos" = "لا يمكنك مشاهدة التنسيقات";
+"Sin nombre" = "لا اسم";
+
+"Procesos" = "معالجة";
+"Terminado" = "تم الانتهاء من";
+"Iniciar" = "بداية";
+"Deben finalizar los formatos anteriores" = "يجب أن تنتهي التنسيقات السابقة";
+"Llene el campo llave" = "املأ حقل المفتاح";
+
+//infor view ----
+"Fecha" = "تاريخ";
+
+"Admin" = "مشرف";
+
+//Participants
+"Solicitudes" = "الطلبات";
+"Aprobar" = "يوافق";
+"Rechazar" = "رفض";
+"Aceptado" = "قبلت";
+
+//Media
+"Media" = "وسائل الإعلام";
+"Links" = "الروابط";
+"Docs" = "المستندات";
+"Media, Links y Docs" = "الوسائط والروابط والمستندات";
+
+// Edit group
+"Escribe aquí una descripción de grupo" = "اكتب وصف المجموعة هنا";
+"Descripción de grupo" = "وصف المجموعة";
+"Cargando..." = "جار التحميل...";
+"Información de grupo" = "معلومات المجموعة";
+"Incidencias y demoras" = "الحوادث والتأخير";

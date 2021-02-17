@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct IATestApp: App {
     let persistenceController = PersistenceController.shared
+    @ObservedObject var notifier: NotificationService = .shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(notifier)
         }
     }
 }

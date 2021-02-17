@@ -1,0 +1,194 @@
+/* 
+  Localizable.strings
+  IATest
+    FRENCH
+  Created by Erick Guerrero on 16/02/21.
+*/
+
+//Global
+"Error" = "Erreur";
+"Correcto" = "Réussi";
+"Advertencia" = "Attention";
+"Atrás" = "Retour";
+"Grupo" = "Groupe";
+"Agregar" = "Ajouter";
+"Guardar" = "Sauver";
+"Sí" = "Oui";
+"Documentos" = "Documents";
+"Llave" = "Clé";
+"Ninguno" = "Aucun";
+"Ninguna" = "Aucun";
+"Respuesta" = "Réponse";
+"sin titulo" = "pas de titre";
+"Iniciar" = "Début";
+"Revisión" = "Révision";
+"Buscar" = "Chercher";
+
+"¿Deseas sincronizar?" = "Voulez-vous synchroniser?";
+"Sincronizar" = "Synchroniser";
+//Auth
+"Usuario" = "Utilisateur";
+"Contraseña" = "Mot de passe";
+"Iniciar sesión" = "S'identifier";
+
+//Sync
+"Sincronizando..." = "Synchronisation ...";
+
+//Chats
+"Chats" = "Chats";
+"¿Qué acción quieres hacer?" = "Quelle action voulez-vous faire?";
+"Unirme a un grupo" = "Rejoindre un groupe";
+"Configuraciones" = "Configurations";
+"Cancelar" = "Annuler";
+"Lista de difusión" = "Liste de diffusion";
+"Grupo nuevo" = "Nouveau groupe";
+
+//RoomItem
+"Tarea" = "Tâche";
+"Incidencia" = "Incidence";
+"Demora" = "Retard";
+"Imagen" = "Image";
+"Video" = "Vidéo";
+"Documento" = "Document";
+
+//ChatView
+"Cámara" = "Caméra";
+"Librería de foto y vídeo" = "Photothèque et vidéothèque"; // Librería de foto y vídeo
+"Librería de foto" = "Galerie de photos";
+"Mensaje..." = "Message...";
+"Tiempo restante" = "Temps restant";
+"Enviando..." = "Envoi en cours...";
+
+//New group
+"Agregar participantes" = "Ajouter des participants";
+"Siguiente" = "Prochain";
+"Nombre del grupo" = "Nom de groupe";
+"Participantes" = "Participants";
+"Nuevo grupo" = "Nouveau groupe";
+"Crear" = "Créer";
+
+//Group join
+"No hay descripción" = "Pas de description";
+"Grupos de la organización" = "Groupes de l'organisation";
+"Solicitar unirme" = "Postuler pour rejoindre";
+"Ya se envio una solicitud" = "Une candidature a déjà été envoyée";
+
+// Broadcast list
+"Nombre de la lista" = "Liste de noms";
+"Nueva lista de difusión" = "Nouvelle liste de diffusion";
+
+"Nombre de grupo" = "Nom de groupe";
+"Lista de destinatarios" = "Liste des destinataires";
+"Editar lista" = "Liste d'édition";
+"Información de lista" = "Liste des informations";
+
+//Configurations
+"Cerrar sesión" = "Se déconnecter";
+"¿Deseas cerrar sesión?" = "Voulez-vous vous déconnecter?";
+
+//Notifications
+"Notificaciones" = "Notifications";
+
+//Incidents
+"Nueva incidencia" = "Nouvelle incidence";
+"Notas" = "Remarques";
+"Baja" = "Faible";
+"Media" = "Moitié";
+"Alta" = "Haute";
+"Prioridad" = "Priorité";
+"Incidencia previa" = "Incidence précédente";
+"Tipo de incidencia" = "Type d'incident";
+"Incidencias" = "Incidents";
+"Terminada" = "Fini";
+"No se pudo realizar" = "Impossible à faire";
+"Comentarios" = "Commentaires";
+"Agregar comentarios" = "Ajoutez des commentaires";
+"Campo llave" = "Champ clé";
+"Categoría" = "Catégorie";
+"Reporte" = "Rapport";
+"Sin comentarios" = "Pas de commet";
+"Evidencia" = "Preuve";
+"Resolver" = "Résoudre";
+"Detalle de incidencia" = "Détails de l'incident";
+"Pendiente de resolver" = "En attente de résolution";
+"Resuelta" = "Résolu";
+"No se pudo resolver" = "Échec de la résolution";
+"Seleccionar múltiples" = "Sélectionnez plusieurs";
+
+//Delay
+"Demoras" = "Retards";
+"Nueva demora" = "Nouveau délai";
+"Etapa afectada" = "Stade affecté";
+"Tipo de demora" = "Type de retard";
+
+//Image
+"Agregar imagen" = "Ajouter une image";
+
+//Task
+"Nombre" = "Nom";
+"Ubicación" = "Emplacement";
+"Detalles" = "Détails";
+"Fecha y hora" = "Date et l'heure";
+"Asignar" = "Attribuer";
+"Cualquiera" = "N'importe qui";
+"Nueva tarea" = "Nouvelle tâche";
+"Mis Tareas" = "Mes tâches";
+"Mis tareas" = "Mes tâches";
+"Tareas grupo" = "Tâches de groupe";
+"Tareas de grupo" = "Tâches de groupe";
+"Asignado a" = "Assigné à";
+"(yo)" = "(moi)";
+"Vence el" = "Expire le";
+"Detalle de tarea" = "Détails de la tâche";
+"Tareas" = "Tâches";
+"Finalizar" = "Finaliser";
+
+//Process
+"Registrar" = "S'inscrire";
+"proceso" = "processus";
+"Ingrese respuesta" = "Entrez la réponse";
+"Página" = "Page";
+"Enviar" = "Envoyer";
+"No hay preguntas" = "Il n'y a pas de questions";
+"No tienes permisos para contestar" = "Vous n'êtes pas autorisé à répondre";
+"No puedes contestar esta pregunta" = "Vous ne pouvez pas répondre à cette question";
+
+"Etapas" = "Étapes";
+"Deben finalizar las etapas anteriores" = "Les étapes précédentes doivent se terminer";
+"Pendiente" = "En attente";
+"En proceso" = "En cours";
+"Finalizada" = "Fini";
+
+"Formatos" = "Formats";
+"No puedes ver formatos" = "Vous ne pouvez pas voir les formats";
+"Sin nombre" = "Sans nom";
+
+"Procesos" = "Processus";
+"Terminado" = "Fini";
+"Iniciar" = "Début";
+"Deben finalizar los formatos anteriores" = "Les formats précédents doivent se terminer";
+"Llene el campo llave" = "Remplissez le champ clé";
+
+//infor view ----
+"Fecha" = "Date";
+
+"Admin" = "Admin";
+
+//Participants
+"Solicitudes" = "Demandes";
+"Aprobar" = "Approuver";
+"Rechazar" = "Rejeter";
+"Aceptado" = "Accepté";
+
+//Media
+"Media" = "Médias";
+"Links" = "Liens";
+"Docs" = "Docs";
+"Media, Links y Docs" = "Médias, liens et documents";
+
+// Edit group
+"Escribe aquí una descripción de grupo" = "Écrivez une description de groupe ici";
+"Descripción de grupo" = "Description du groupe";
+"Cargando..." = "Chargement...";
+"Información de grupo" = "Informations sur le groupe";
+"Incidencias y demoras" = "Incidents et retards";

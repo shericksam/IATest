@@ -1,0 +1,192 @@
+/* 
+  Localizable.strings
+  IATest
+    JAPANESE
+  Created by Erick Guerrero on 16/02/21..
+*/
+"Error" = "エラー";
+"Correcto" = "成功";
+"Advertencia" = "警告";
+"Atrás" = "バック";
+"Grupo" = "グループ";
+"Agregar" = "追加";
+"Guardar" = "セーブ";
+"Sí" = "はい";
+"Documentos" = "ドキュメント";
+"Llave" = "キー";
+"Ninguno" = "無し";
+"Ninguna" = "無し";
+"Respuesta" = "回答";
+"sin titulo" = "タイトルなし";
+"Iniciar" = "開始";
+"Revisión" = "リビジョン";
+"Buscar" = "探す";
+
+"¿Deseas sincronizar?" = "同期しますか";
+"Sincronizar" = "同期";
+//Auth
+"Usuario" = "ユーザー";
+"Contraseña" = "パスワード";
+"Iniciar sesión" = "ログインする";
+
+//Sync
+"Sincronizando..." = "同期しています...";
+
+//Chats
+"Chats" = "チャット";
+"¿Qué acción quieres hacer?" = "どのようなアクションを実行しますか？";
+"Unirme a un grupo" = "グループに参加";
+"Configuraciones" = "構成";
+"Cancelar" = "キャンセル";
+"Lista de difusión" = "放送リスト";
+"Grupo nuevo" = "新グループ";
+
+//RoomItem
+"Tarea" = "仕事";
+"Incidencia" = "入射";
+"Demora" = "ディレイ";
+"Imagen" = "画像";
+"Video" = "ビデオ";
+"Documento" = "資料";
+
+//ChatView
+"Cámara" = "カメラ";
+"Librería de foto y vídeo" = "写真とビデオライブラリ"; //Libreríade foto yvídeo
+"Librería de foto" = "写真ライブラリ";
+"Mensaje..." = "メッセージ...";
+"Tiempo restante" = "残り時間";
+"Enviando..." = "送信...";
+
+//New group
+"Agregar participantes" = "参加者を追加";
+"Siguiente" = "次";
+"Nombre del grupo" = "グループ名";
+"Participantes" = "参加者";
+"Nuevo grupo" = "新グループ";
+"Crear" = "作成";
+
+//Group join
+"No hay descripción" = "説明なし";
+"Grupos de la organización" = "組織のグループ";
+"Solicitar unirme" = "参加を申し込む";
+"Ya se envio una solicitud" = "アプリケーションはすでに送信されました";
+
+// Broadcast list
+"Nombre de la lista" = "リスト名";
+"Nueva lista de difusión" = "新しい放送リスト";
+
+"Nombre de grupo" = "グループ名";
+"Lista de destinatarios" = "受信者リスト";
+"Editar lista" = "リストを編集";
+"Información de lista" = "リスト情報";
+
+//Configurations
+"Cerrar sesión" = "ログアウト";
+"¿Deseas cerrar sesión?" = "ログアウトしますか？";
+
+//Notifications
+"Notificaciones" = "通知";
+
+//Incidents
+"Nueva incidencia" = "新しい発生率";
+"Notas" = "ノート";
+"Baja" = "低い";
+"Media" = "ハーフ";
+"Alta" = "高い";
+"Prioridad" = "優先";
+"Incidencia previa" = "以前の発生率";
+"Tipo de incidencia" = "インシデントの種類";
+"Incidencias" = "インシデント";
+"Terminada" = "終了";
+"No se pudo realizar" = "実行できませんでした";
+"Comentarios" = "コメント";
+"Agregar comentarios" = "コメントを追加";
+"Campo llave" = "キーフィールド";
+"Categoría" = "カテゴリー";
+"Reporte" = "報告する";
+"Sin comentarios" = "コメント無し";
+"Evidencia" = "証拠";
+"Resolver" = "解決する";
+"Detalle de incidencia" = "インシデントの詳細";
+"Pendiente de resolver" = "解決待ち";
+"Resuelta" = "解決済み";
+"No se pudo resolver" = "解決できませんでした";
+"Seleccionar múltiples" = "複数選択";
+
+//Delay
+"Demoras" = "遅延";
+"Nueva demora" = "新しい遅延";
+"Etapa afectada" = "影響を受けるステージ";
+"Tipo de demora" = "遅延のタイプ";
+
+//Image
+"Agregar imagen" = "画像を追加";
+
+//Task
+"Nombre" = "名前";
+"Ubicación" = "ロケーション";
+"Detalles" = "詳細";
+"Fecha y hora" = "日時";
+"Asignar" = "割当";
+"Cualquiera" = "誰でも";
+"Nueva tarea" = "新しい仕事";
+"Mis Tareas" = "私の仕事";
+"Mis tareas" = "私の仕事";
+"Tareas grupo" = "グループタスク";
+"Tareas de grupo" = "グループタスク";
+"Asignado a" = "に割り当てられた";
+"(yo)" = "（私）";
+"Vence el" = "期限切れ";
+"Detalle de tarea" = "タスクの詳細";
+"Tareas" = "タスク";
+"Finalizar" = "ファイナライズ";
+
+//Process
+"Registrar" = "登録";
+"proceso" = "処理する";
+"Ingrese respuesta" = "回答を入力してください";
+"Página" = "ページ";
+"Enviar" = "送信";
+"No hay preguntas" = "質問はありません";
+"No tienes permisos para contestar" = "あなたには答える許可がありません";
+"No puedes contestar esta pregunta" = "この質問に答えることはできません";
+
+"Etapas" = "ステージ";
+"Deben finalizar las etapas anteriores" = "前のステージは終了する必要があります";
+"Pendiente" = "保留中";
+"En proceso" = "処理中";
+"Finalizada" = "終了";
+
+"Formatos" = "フォーマット";
+"No puedes ver formatos" = "あなたはフォーマットを見ることができません";
+"Sin nombre" = "ノーネーム";
+
+"Procesos" = "処理する";
+"Terminado" = "終了";
+"Iniciar" = "開始";
+"Deben finalizar los formatos anteriores" = "以前のフォーマットは終了する必要があります";
+"Llene el campo llave" = "キーフィールドに入力してください";
+
+//infor view ----
+"Fecha" = "日付";
+
+"Admin" = "管理者";
+
+//Participants
+"Solicitudes" = "リクエスト";
+"Aprobar" = "承認";
+"Rechazar" = "拒否";
+"Aceptado" = "承諾";
+
+//Media
+"Media" = "メディア";
+"Links" = "リンク";
+"Docs" = "ドキュメント";
+"Media, Links y Docs" = "メディア、リンク、ドキュメント";
+
+// Edit group
+"Escribe aquí una descripción de grupo" = "ここにグループの説明を書いてください";
+"Descripción de grupo" = "グループの説明";
+"Cargando..." = "読み込み中...";
+"Información de grupo" = "グループ情報";
+"Incidencias y demoras" = "インシデントと遅延";
