@@ -65,4 +65,34 @@ class APIClient {
         
         return self.caller.call(request)
     }
+    
+    func getTransactions(_ data: TransactionsRequest) -> Result<TransactionsResponse, ApiErrorModel> {
+        let request = RequestModel(
+            httpMethod: .post,
+            path: "v2/members/loyalty",
+            baseUrl: self.baseUrl,
+            payload: data.dictionaryValue,
+            headers: self.auth(),
+            contentType: .ApplicationJson
+        )
+        .asURLRequest()
+        
+        return self.caller.call(request)
+    }
+    
+    //    -------------------Billboard----------------------------
+    
+    func getBillboard(_ data: BillboardRequest) -> Result<Profile, ApiErrorModel> {
+        let request = RequestModel(
+            httpMethod: .post,
+            path: "v2/movies",
+            baseUrl: self.baseUrl,
+            payload: data.dictionaryValue,
+            headers: self.auth(),
+            contentType: .ApplicationJson
+        )
+        .asURLRequest()
+        
+        return self.caller.call(request)
+    }
 }

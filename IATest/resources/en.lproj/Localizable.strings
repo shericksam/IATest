@@ -14,6 +14,7 @@
 "yes" = "Yes";
 
 "welcome" = "Welcome!";
+"check-data" = "Check the data entered";
 
 // Auth
 "signin" = "Sign in";
@@ -36,3 +37,15 @@
 "transactions" = "Transactions";
 "check-card" = "Check card";
 "card-number" = "Card number";
+
+"level" = "Level";
+"next-level" = "Next level";
+"message" = "Message";
+
+//Movie Details
+"movie-detail" = "Movie detail";
+"name" = "Name";
+"classification" = "Classification";
+"genre" = "Genre";
+"duration" = "Duration";
+"synopsis" = "Synopsis";

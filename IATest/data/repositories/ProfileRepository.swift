@@ -17,5 +17,9 @@ class ProfileRepository {
     func getProfile(_ data: ProfileRequest = .init()) throws -> Profile {
         return try api.getProfile(data).get()
     }
+    
+    func getTransactions(_ data: TransactionsRequest) throws -> TransactionsResponse {
+        return try api.getTransactions(data).get()
+    }
 }
 

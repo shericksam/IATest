@@ -20,13 +20,15 @@ struct ApiErrorModel: DecodableError {
     // MARK: - variables
     var error: String?
     var errorDescription: String?
-    
+    var message: String?
+    var statusCode: Int?
     public init() {
         
     }
     enum CodingKeys: String, CodingKey {
-        case error, status, errorCode, errorDetail
+        case error, status, errorCode, errorDetail,message
         case errorDescription = "error_description"
+        case statusCode = "status_code"
     }
 }
 
@@ -35,6 +37,8 @@ extension ApiErrorModel: LocalizedError {
         if let error = self.errorDescription {
             return error
         } else if let error = self.error {
+            return error
+        } else if  let error = self.message {
             return error
         }
         return "Error in model"

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RetroSwift",
+        "repositoryURL": "https://github.com/shericksam/RetroSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "3f88ccb415b571f5d6a607f243a0afa8964f7521",
+          "version": "1.2.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

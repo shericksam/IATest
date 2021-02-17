@@ -26,7 +26,7 @@ struct HomeView: View {
                         Text("profile")
                     }
                 
-                Text("billboard")
+                BillboardView()
                     .tag(IndexTabRoot.billboard.rawValue)
                     .tabItem {
                         Image(systemName: "list.bullet.below.rectangle")
@@ -46,6 +46,7 @@ struct HomeView: View {
             .tabViewStyle(DefaultTabViewStyle())
             .navigationBarTitle(self.title.localized, displayMode: .inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     var title: String {

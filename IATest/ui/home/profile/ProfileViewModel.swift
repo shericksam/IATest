@@ -22,7 +22,10 @@ class ProfileViewModel: ObservableObject {
     @AppStorage("token") var token: String = ""
     @AppStorage("refreshToken") var refreshToken: String = ""
 //
-    @Published var cardNumber: String = ""
+    @Published var cardNumber: String = "1303030763820961"
+    @Published var pin: String = "4804"
+    @Published var level: Level?
+    @Published var balanceList: [Balance] = []
     
     func getProfile() {
         self.isLoading = true
@@ -44,6 +47,38 @@ class ProfileViewModel: ObservableObject {
         }
     }
     
+    func checkCard()  {
+        guard !self.cardNumber.isEmpty,
+              self.cardNumber.count > 6,
+              !self.pin.isEmpty,
+              self.pin.count == 4 else {
+            self.notifier.showBanner("warning", "check-data", .warning)
+            return
+        }
+        
+        self.isLoading = true
+        Coroutines.io {
+            do {
+                let request = TransactionsRequest(
+                    cardNumber: self.cardNumber,
+                    pin: self.pin)
+                let result = try self.profileRepository.getTransactions(request)
+                print("checkCard result", result)
+                Coroutines.main {
+                    self.level = result.level
+                    self.balanceList = result.balanceList
+                    self.isLoading = false
+//                    self.profile = result
+                }
+            } catch let error as ApiErrorModel {
+                Coroutines.main {
+                    print("error getProfile", error.localizedDescription)
+                    self.isLoading = false
+                    self.notifier.showBanner("error", error.localizedDescription, .danger)
+                }
+            }
+        }
+    }
     func logout() {
         self.isLogged = false
         self.tokenType = ""

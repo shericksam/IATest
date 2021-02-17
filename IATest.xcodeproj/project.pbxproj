@@ -49,6 +49,17 @@
 		C5BBA97325DD6D95001850E1 /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA97125DD6D95001850E1 /* WebImage.swift */; };
 		C5BBA98125DD71F3001850E1 /* CinemaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA98025DD71F3001850E1 /* CinemaRepository.swift */; };
 		C5BBA98725DD73AE001850E1 /* AddCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA98625DD73AE001850E1 /* AddCardsView.swift */; };
+		C5BBA99225DD76E6001850E1 /* TransactionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA99125DD76E6001850E1 /* TransactionsRequest.swift */; };
+		C5BBA99925DD7A63001850E1 /* BillboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA99625DD7A63001850E1 /* BillboardView.swift */; };
+		C5BBA99A25DD7A63001850E1 /* BillboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA99725DD7A63001850E1 /* BillboardViewModel.swift */; };
+		C5BBA9A425DD7B05001850E1 /* BillboardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA9A325DD7B05001850E1 /* BillboardRequest.swift */; };
+		C5BBA9AD25DD82CE001850E1 /* TransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA9AC25DD82CE001850E1 /* TransactionsResponse.swift */; };
+		C5BBA9B525DD8491001850E1 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA9B425DD8491001850E1 /* Level.swift */; };
+		C5BBA9BA25DD84C8001850E1 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA9B925DD84C8001850E1 /* Balance.swift */; };
+		C5BBA9BF25DD8B0F001850E1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA9BE25DD8B0F001850E1 /* Movie.swift */; };
+		C5BBA9C425DD8B36001850E1 /* BillboardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA9C325DD8B36001850E1 /* BillboardResponse.swift */; };
+		C5BBA9CC25DD978C001850E1 /* BillboardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA9CB25DD978C001850E1 /* BillboardItemView.swift */; };
+		C5BBA9D225DD98A1001850E1 /* BillboardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BBA9D125DD98A1001850E1 /* BillboardDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +128,17 @@
 		C5BBA97125DD6D95001850E1 /* WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebImage.swift; sourceTree = "<group>"; };
 		C5BBA98025DD71F3001850E1 /* CinemaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaRepository.swift; sourceTree = "<group>"; };
 		C5BBA98625DD73AE001850E1 /* AddCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardsView.swift; sourceTree = "<group>"; };
+		C5BBA99125DD76E6001850E1 /* TransactionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRequest.swift; sourceTree = "<group>"; };
+		C5BBA99625DD7A63001850E1 /* BillboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardView.swift; sourceTree = "<group>"; };
+		C5BBA99725DD7A63001850E1 /* BillboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardViewModel.swift; sourceTree = "<group>"; };
+		C5BBA9A325DD7B05001850E1 /* BillboardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardRequest.swift; sourceTree = "<group>"; };
+		C5BBA9AC25DD82CE001850E1 /* TransactionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsResponse.swift; sourceTree = "<group>"; };
+		C5BBA9B425DD8491001850E1 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		C5BBA9B925DD84C8001850E1 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		C5BBA9BE25DD8B0F001850E1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		C5BBA9C325DD8B36001850E1 /* BillboardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardResponse.swift; sourceTree = "<group>"; };
+		C5BBA9CB25DD978C001850E1 /* BillboardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardItemView.swift; sourceTree = "<group>"; };
+		C5BBA9D125DD98A1001850E1 /* BillboardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +288,7 @@
 		C5BBA80125DC31DD001850E1 /* responses */ = {
 			isa = PBXGroup;
 			children = (
+				C5BBA9AB25DD82C0001850E1 /* billboard */,
 				C5BBA94825DD6651001850E1 /* profile */,
 				C5BBA8C725DC69C0001850E1 /* auth */,
 			);
@@ -275,6 +298,7 @@
 		C5BBA80325DC31DD001850E1 /* request */ = {
 			isa = PBXGroup;
 			children = (
+				C5BBA9A225DD7AF0001850E1 /* billboard */,
 				C5BBA94925DD665A001850E1 /* profile */,
 				C5BBA8BE25DC66E6001850E1 /* auth */,
 			);
@@ -458,6 +482,10 @@
 		C5BBA93125DCCC57001850E1 /* billboard */ = {
 			isa = PBXGroup;
 			children = (
+				C5BBA9D025DD988F001850E1 /* details */,
+				C5BBA99625DD7A63001850E1 /* BillboardView.swift */,
+				C5BBA99725DD7A63001850E1 /* BillboardViewModel.swift */,
+				C5BBA9CB25DD978C001850E1 /* BillboardItemView.swift */,
 			);
 			path = billboard;
 			sourceTree = "<group>";
@@ -465,6 +493,7 @@
 		C5BBA94825DD6651001850E1 /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				C5BBA9AC25DD82CE001850E1 /* TransactionsResponse.swift */,
 				C5BBA95225DD6750001850E1 /* ProfileResponse.swift */,
 			);
 			path = profile;
@@ -474,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				C5BBA94A25DD666F001850E1 /* ProfileRequest.swift */,
+				C5BBA99125DD76E6001850E1 /* TransactionsRequest.swift */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -482,6 +512,9 @@
 			isa = PBXGroup;
 			children = (
 				C5BBA95F25DD69E8001850E1 /* Profile.swift */,
+				C5BBA9B425DD8491001850E1 /* Level.swift */,
+				C5BBA9B925DD84C8001850E1 /* Balance.swift */,
+				C5BBA9BE25DD8B0F001850E1 /* Movie.swift */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -508,6 +541,30 @@
 				C5BBA98625DD73AE001850E1 /* AddCardsView.swift */,
 			);
 			path = cards;
+			sourceTree = "<group>";
+		};
+		C5BBA9A225DD7AF0001850E1 /* billboard */ = {
+			isa = PBXGroup;
+			children = (
+				C5BBA9A325DD7B05001850E1 /* BillboardRequest.swift */,
+			);
+			path = billboard;
+			sourceTree = "<group>";
+		};
+		C5BBA9AB25DD82C0001850E1 /* billboard */ = {
+			isa = PBXGroup;
+			children = (
+				C5BBA9C325DD8B36001850E1 /* BillboardResponse.swift */,
+			);
+			path = billboard;
+			sourceTree = "<group>";
+		};
+		C5BBA9D025DD988F001850E1 /* details */ = {
+			isa = PBXGroup;
+			children = (
+				C5BBA9D125DD98A1001850E1 /* BillboardDetailsView.swift */,
+			);
+			path = details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -650,11 +707,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5BBA9D225DD98A1001850E1 /* BillboardDetailsView.swift in Sources */,
 				C5BBA8B425DC5151001850E1 /* ButtonPrimaryStyle.swift in Sources */,
 				C5BBA7CB25DC31A9001850E1 /* Persistence.swift in Sources */,
 				C5BBA94425DD63EC001850E1 /* ProfileViewModel.swift in Sources */,
 				C5BBA88625DC40A5001850E1 /* Color+Extension.swift in Sources */,
 				C5BBA91E25DCC8D7001850E1 /* HomeView.swift in Sources */,
+				C5BBA9CC25DD978C001850E1 /* BillboardItemView.swift in Sources */,
 				C5BBA98125DD71F3001850E1 /* CinemaRepository.swift in Sources */,
 				C5BBA8C025DC6702001850E1 /* AuthRequest.swift in Sources */,
 				C5BBA95325DD6750001850E1 /* ProfileResponse.swift in Sources */,
@@ -663,28 +722,37 @@
 				C5BBA92925DCC9B7001850E1 /* IndexTabRoot.swift in Sources */,
 				C5BBA7CE25DC31A9001850E1 /* IATest.xcdatamodeld in Sources */,
 				C5BBA80B25DC31DD001850E1 /* APIClient.swift in Sources */,
+				C5BBA9A425DD7B05001850E1 /* BillboardRequest.swift in Sources */,
+				C5BBA9AD25DD82CE001850E1 /* TransactionsResponse.swift in Sources */,
 				C5BBA8D225DC6DD9001850E1 /* ApiErrorModel.swift in Sources */,
+				C5BBA9C425DD8B36001850E1 /* BillboardResponse.swift in Sources */,
 				C5BBA87E25DC40A5001850E1 /* NSManagedObjectContext+Extensions.swift in Sources */,
 				C5BBA93325DCCC69001850E1 /* ProfileView.swift in Sources */,
 				C5BBA97225DD6D95001850E1 /* WebImageLoader.swift in Sources */,
 				C5BBA7FA25DC31C1001850E1 /* SpinnerModifier.swift in Sources */,
+				C5BBA99925DD7A63001850E1 /* BillboardView.swift in Sources */,
 				C5BBA7C425DC31A5001850E1 /* RootView.swift in Sources */,
 				C5BBA8C925DC69D3001850E1 /* AuthResponse.swift in Sources */,
 				C5BBA86225DC375A001850E1 /* AuthView.swift in Sources */,
+				C5BBA99225DD76E6001850E1 /* TransactionsRequest.swift in Sources */,
 				C5BBA88325DC40A5001850E1 /* String+Extension.swift in Sources */,
 				C5BBA95B25DD67CC001850E1 /* ProfileRepository.swift in Sources */,
 				C5BBA88525DC40A5001850E1 /* ViewExtension.swift in Sources */,
 				C5BBA86325DC375A001850E1 /* AuthViewModel.swift in Sources */,
+				C5BBA99A25DD7A63001850E1 /* BillboardViewModel.swift in Sources */,
+				C5BBA9BA25DD84C8001850E1 /* Balance.swift in Sources */,
 				C5BBA7F925DC31C1001850E1 /* OnLoadModifier.swift in Sources */,
 				C5BBA98725DD73AE001850E1 /* AddCardsView.swift in Sources */,
 				C5BBA91125DCBC49001850E1 /* Popup.swift in Sources */,
 				C5BBA96025DD69E9001850E1 /* Profile.swift in Sources */,
 				C5BBA94B25DD666F001850E1 /* ProfileRequest.swift in Sources */,
 				C5BBA86C25DC3A19001850E1 /* AuthRepository.swift in Sources */,
+				C5BBA9B525DD8491001850E1 /* Level.swift in Sources */,
 				C5BBA91F25DCC8D7001850E1 /* HomeViewModel.swift in Sources */,
 				C5BBA97325DD6D95001850E1 /* WebImage.swift in Sources */,
 				C5BBA90C25DCBC06001850E1 /* NotificationService.swift in Sources */,
 				C5BBA8FD25DCBB93001850E1 /* BannerModifier.swift in Sources */,
+				C5BBA9BF25DD8B0F001850E1 /* Movie.swift in Sources */,
 				C5BBA7C225DC31A5001850E1 /* IATestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

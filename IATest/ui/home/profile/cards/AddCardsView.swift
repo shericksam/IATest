@@ -18,7 +18,31 @@ struct AddCardsView: View {
     var body: some View {
         VStack {
             TextField("card-number", text: $viewModel.cardNumber)
-                
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            TextField("pin", text: $viewModel.pin)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.numberPad)
+                .padding()
+            Button("check", action: viewModel.checkCard)
+            
+            if self.viewModel.level != nil {
+                HStack {
+                    Text("level")
+                    Spacer()
+                    Text(self.viewModel.level!.name)
+                }
+                HStack {
+                    Text("next-level")
+                    Spacer()
+                    Text(self.viewModel.level!.nextLevel)
+                }
+                HStack {
+                    Text("message")
+                    Spacer()
+                    Text(self.viewModel.level!.message)
+                }
+            }
             Spacer()
         }
         .navigationBarTitle("check-card")
