@@ -11,6 +11,13 @@ import Foundation
 
 struct BillboardResponse: Codable {
     // MARK: - variables
-    var movies: [Movie]
+    var movies: [MovieCD]
+    var routes: [RoutesCD]
 }
 
+
+enum Rating: String, Codable {
+    case a = "A"
+    case b = "B"
+    case sC = "S/C"
+}

@@ -12,13 +12,18 @@ import CoreData
 
 struct MyCoreBack {
     static let shared = MyCoreBack()
+    
     var background: NSManagedObjectContext
+    var main: NSManagedObjectContext
     
     init() {
         let viewContext = PersistenceController.shared.container.viewContext
+        viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        viewContext.undoManager = nil
+        self.main = viewContext
         let childContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         childContext.parent = viewContext
-        childContext.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
+        childContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
         childContext.undoManager = nil
         childContext.automaticallyMergesChangesFromParent = true
         self.background = childContext

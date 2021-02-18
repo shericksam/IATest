@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="MediaCD" representedClassName="MediaCD" syncable="YES" codeGenerationType="class">
+    <entity name="MediaCD" representedClassName="MediaCD" syncable="YES">
         <attribute name="code" optional="YES" attributeType="String"/>
         <attribute name="resource" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
         <relationship name="movie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MovieCD" inverseName="media" inverseEntity="MovieCD"/>
     </entity>
-    <entity name="MovieCD" representedClassName="MovieCD" syncable="YES" codeGenerationType="class">
-        <attribute name="categories" optional="YES" attributeType="Transformable" customClassName="[String]"/>
-        <attribute name="cinemas" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+    <entity name="MovieCD" representedClassName="MovieCD" syncable="YES">
+        <attribute name="categories" optional="YES" attributeType="Transformable" valueTransformerName="ArrayStringTransformer" customClassName="[String]"/>
+        <attribute name="cinemas" optional="YES" attributeType="Transformable" valueTransformerName="ArrayStringTransformer" customClassName="[String]"/>
         <attribute name="code" optional="YES" attributeType="String"/>
         <attribute name="genre" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -21,9 +21,32 @@
         <attribute name="synopsis" optional="YES" attributeType="String"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="media" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MediaCD" inverseName="movie" inverseEntity="MediaCD"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="RoutesCD" representedClassName="RoutesCD" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <relationship name="sizes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SizeCD" inverseName="route" inverseEntity="SizeCD"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="code"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="SizeCD" representedClassName="SizeCD" syncable="YES">
+        <attribute name="large" optional="YES" attributeType="String"/>
+        <attribute name="medium" optional="YES" attributeType="String"/>
+        <attribute name="small" optional="YES" attributeType="String"/>
+        <attribute name="xLarge" optional="YES" attributeType="String"/>
+        <relationship name="route" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RoutesCD" inverseName="sizes" inverseEntity="RoutesCD"/>
     </entity>
     <elements>
-        <element name="MovieCD" positionX="-63" positionY="-18" width="128" height="239"/>
         <element name="MediaCD" positionX="-63" positionY="0" width="128" height="89"/>
+        <element name="MovieCD" positionX="-63" positionY="-18" width="128" height="239"/>
+        <element name="RoutesCD" positionX="-45" positionY="108" width="128" height="59"/>
+        <element name="SizeCD" positionX="-36" positionY="117" width="128" height="104"/>
     </elements>
 </model>

@@ -13,10 +13,11 @@ struct BillboardView: View {
     
     // MARK: - Propertiers
     @StateObject private var viewModel: BillboardViewModel = .init()
-    let data = (1...1000).map { "Item \($0)" }
-//    let columns = [
-//        GridItem(.adaptive(minimum: 100))
-//    ]
+    @FetchRequest(fetchRequest: MovieCD.fetchRequestAll())
+        var movies: FetchedResults<MovieCD>
+    @FetchRequest(fetchRequest: RoutesCD.fetchRequestAll())
+        var routes: FetchedResults<RoutesCD>
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -26,12 +27,25 @@ struct BillboardView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(data, id: \.self) { item in
-                    BillboardItemView()
+                ForEach(movies, id: \.self) { movie in
+                    NavigationLink(destination:
+                        BillboardDetailsView(movie: movie, routeTrailer: routeTrailer)
+                    ) {
+                        BillboardItemView(movie: movie, routePoster: routePoster)
+                    }
+                        .buttonStyle(PlainButtonStyle())
                 }
             }
             .padding(.horizontal)
-        }
+        }.onAppear(perform: viewModel.getMovies)
+    }
+    
+    var routePoster: RoutesCD? {
+        self.routes.first { $0.code == "poster" }
+    }
+    
+    var routeTrailer: RoutesCD? {
+        self.routes.first { $0.code == "trailer_mp4" }
     }
     
     // MARK: - funcs

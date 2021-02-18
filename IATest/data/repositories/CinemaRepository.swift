@@ -14,7 +14,7 @@ class CinemaRepository {
     static var shared: CinemaRepository = .init()
     lazy var api: APIClient = { .shared }()
     
-    func getCinemas(_ data: BillboardRequest) throws -> Profile {
+    func getCinemas(_ data: BillboardRequest) throws -> BillboardResponse {
         return try api.getBillboard(data).get()
     }
 }

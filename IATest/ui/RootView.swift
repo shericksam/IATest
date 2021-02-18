@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 
 struct RootView: View {
-    @AppStorage("isLogged") var isLogged = true
+    @AppStorage("isLogged") var isLogged = false
     
     var body: some View {
         VStack {

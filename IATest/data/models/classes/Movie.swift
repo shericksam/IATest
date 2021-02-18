@@ -9,7 +9,11 @@
 
 import Foundation
 
-struct Movie: Codable {
+struct Movie: Codable, Identifiable, Hashable {
+    static func == (lhs: Movie, rhs: Movie) -> Bool {
+        lhs.id == rhs.id
+    }
+    
     // MARK: - variables
     var rating: String
     var media: [Media]
@@ -31,7 +35,7 @@ struct Movie: Codable {
 
 
 // MARK: - Media
-struct Media: Codable {
+struct Media: Codable, Hashable {
     var type: TypeEnum
     var code, resource: String
 }

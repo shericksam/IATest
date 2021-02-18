@@ -74,6 +74,7 @@ struct ProfileView: View {
                 .padding(.bottom)
                 .background(Color(.tertiarySystemBackground))
         }
+        .spiner(self.$viewModel.isLoading)
         .onAppear(perform: viewModel.getProfile)
     }
     

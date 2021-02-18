@@ -8,10 +8,29 @@
 //
 
 import SwiftUI
+import RetroSwift
 
 class BillboardViewModel: ObservableObject {
     // MARK: - Propertiers
-    @Published var isLoading: Bool = false
+    lazy var notifier: NotificationService = { .shared }()
+    private lazy var cinemaRepository: CinemaRepository = { .shared }()
     
     // MARK: - funcs
+    func getMovies() {
+        Coroutines.io {
+            do {
+                let request = BillboardRequest(cinema: 61)
+                _ = try self.cinemaRepository.getCinemas(request)
+                Coroutines.main {
+                    MyCoreBack.shared.background.saveIfNeeded()
+                    MyCoreBack.shared.main.saveIfNeeded()
+                }
+            } catch let error as ApiErrorModel {
+                Coroutines.main {
+                    print("error getMovies", error.localizedDescription)
+                    self.notifier.showBanner("error", error.localizedDescription, .danger)
+                }
+            }
+        }
+    }
 }

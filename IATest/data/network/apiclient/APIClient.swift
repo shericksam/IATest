@@ -20,8 +20,17 @@ class APIClient {
         }
         config.allowsConstrainedNetworkAccess = true
         config.urlCredentialStorage = .shared
-        return RequestCaller(config: config, nil, true)
+        return RequestCaller(config: config, nil, true, MyCoreBack.shared.background)
     }()
+    
+    private init() {
+        caller.onFailRequestByAuth = onFailRequestAuth
+    }
+    
+    func onFailRequestAuth(_ urlOld: URLRequest) -> URLRequest? {
+    // TODO: add refresh url
+        return nil
+    }
     
     //      -------------------Header auth----------------------------
     func auth() -> [String: String]? {
@@ -82,12 +91,12 @@ class APIClient {
     
     //    -------------------Billboard----------------------------
     
-    func getBillboard(_ data: BillboardRequest) -> Result<Profile, ApiErrorModel> {
+    func getBillboard(_ data: BillboardRequest) -> Result<BillboardResponse, ApiErrorModel> {
         let request = RequestModel(
-            httpMethod: .post,
+            httpMethod: .get,
             path: "v2/movies",
             baseUrl: self.baseUrl,
-            payload: data.dictionaryValue,
+            query: data.dictionaryValue,
             headers: self.auth(),
             contentType: .ApplicationJson
         )
