@@ -14,8 +14,8 @@ import RetroSwift
 class AuthViewModel: ObservableObject {
     // MARK: - Propertiers
     lazy var notifier: NotificationService = { .shared }()
-    @Published var username = "pruebas_beto_ia@yahoo.com"
-    @Published var password = "Pruebas01"
+    @Published var username = ""
+    @Published var password = ""
     @Published var isLoading: Bool = false
     @Published var isValid = false
     @AppStorage("isLogged") var isLogged = false

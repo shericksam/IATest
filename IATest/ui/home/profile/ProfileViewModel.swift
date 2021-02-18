@@ -22,8 +22,8 @@ class ProfileViewModel: ObservableObject {
     @AppStorage("token") var token: String = ""
     @AppStorage("refreshToken") var refreshToken: String = ""
 //
-    @Published var cardNumber: String = "1303030763820961"
-    @Published var pin: String = "4804"
+    @Published var cardNumber: String = ""
+    @Published var pin: String = ""
     @Published var level: Level?
     @Published var balanceList: [Balance] = []
     

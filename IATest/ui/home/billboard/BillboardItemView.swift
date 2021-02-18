@@ -36,10 +36,7 @@ struct BillboardItemView: View {
                 .truncationMode(.tail)
         }
         .onAppear {
-            let poster = movie.media?
-                .map({ $0 as! MediaCD})
-                .first(where: { $0.code == "poster" })
-            guard let resource = poster?.resource,
+            guard let resource = media?.resource,
                   let size = routePoster?.sizes?.medium else {
                 self.hasImage = false
                 return
@@ -50,6 +47,11 @@ struct BillboardItemView: View {
         }
     }
     
+    var media: MediaCD? {
+        movie.media?
+            .map({ $0 as! MediaCD})
+            .first(where: { $0.code == "poster" })
+    }
     // MARK: - funcs
 }
 

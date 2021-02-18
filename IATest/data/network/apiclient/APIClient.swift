@@ -20,7 +20,7 @@ class APIClient {
         }
         config.allowsConstrainedNetworkAccess = true
         config.urlCredentialStorage = .shared
-        return RequestCaller(config: config, nil, true, MyCoreBack.shared.background)
+        return RequestCaller(config: config, nil, false, MyCoreBack.shared.background)
     }()
     
     private init() {

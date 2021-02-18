@@ -27,24 +27,32 @@ struct AddCardsView: View {
             Button("check", action: viewModel.checkCard)
             
             if self.viewModel.level != nil {
-                HStack {
-                    Text("level")
-                    Spacer()
-                    Text(self.viewModel.level!.name)
+                VStack{
+                    HStack {
+                        Text("level")
+                            .bold()
+                        Text(self.viewModel.level!.name)
+                            .font(.body)
+                        Spacer()
+                    }
+                    HStack {
+                        Text("next-level")
+                            .bold()
+                        Text(self.viewModel.level!.nextLevel)
+                            .font(.body)
+                        Spacer()
+                    }
+                    HStack {
+                        Text(self.viewModel.level!.message)
+                            .font(.body)
+                        Spacer()
+                    }
                 }
-                HStack {
-                    Text("next-level")
-                    Spacer()
-                    Text(self.viewModel.level!.nextLevel)
-                }
-                HStack {
-                    Text("message")
-                    Spacer()
-                    Text(self.viewModel.level!.message)
-                }
+                .padding()
             }
             Spacer()
         }
+        .spiner($viewModel.isLoading)
         .navigationBarTitle("check-card")
     }
     

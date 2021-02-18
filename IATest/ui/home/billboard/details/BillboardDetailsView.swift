@@ -20,14 +20,6 @@ struct BillboardDetailsView: View {
     init(movie: MovieCD, routeTrailer: RoutesCD?) {
         self.movie = movie
         self.routeTrailer = routeTrailer
-        let media = movie.media?
-            .map({ $0 as! MediaCD})
-            .first(where: { $0.code == "trailer_mp4" })
-        if let routeTrailer = routeTrailer,
-           let medium = routeTrailer.sizes?.medium,
-           let trailer = media?.resource {
-            self.player = AVPlayer(url: URL(string: "\(medium)\(trailer)")!)
-        }
     }
     
     // MARK: - View
@@ -84,6 +76,13 @@ struct BillboardDetailsView: View {
                             .font(.body)
                     }
                 }
+                .onAppear(perform: {
+                    if let routeTrailer = routeTrailer,
+                       let medium = routeTrailer.sizes?.medium,
+                       let trailer = media?.resource {
+                        self.player = AVPlayer(url: URL(string: "\(medium)\(trailer)")!)
+                    }
+                })
                     .padding()
             }
         }
@@ -94,5 +93,10 @@ struct BillboardDetailsView: View {
         .navigationBarTitle("movie-detail")
     }
     
+    var media: MediaCD? {
+        movie.media?
+            .map({ $0 as! MediaCD })
+            .first(where: { $0.code == "trailer_mp4" })
+    }
     // MARK: - funcs
 }
