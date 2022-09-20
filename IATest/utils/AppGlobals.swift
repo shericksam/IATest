@@ -10,8 +10,8 @@ import SwiftUI
 enum AppConstants {
     static let enviroment : NetworkEnvironment = .dev
     
-    static let prodUrl = "https://stage-api.cinepolis.com"
-    static let testUrl = "https://stage-api.cinepolis.com"
+    static let prodUrl = "{{url}}"
+    static let testUrl = "{{url}}"
     
     static var finalURL: String {
         switch AppConstants.enviroment {
